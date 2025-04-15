@@ -1,102 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CyberTrace Lab</title>
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberTrace Lab | OSINT & Penetration Testing</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Share Tech Mono', monospace;
-      background-color: #0d1117;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #0d1117;
       color: #c9d1d9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
     }
     header {
-      background-color: #161b22;
+      background: #161b22;
       padding: 20px;
       text-align: center;
       border-bottom: 2px solid #30363d;
     }
     header h1 {
-      margin: 0;
-      font-size: 2em;
+      color: #58a6ff;
+      font-size: 2.5rem;
     }
     section {
-      padding: 30px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
     h2 {
-      color: #58a6ff;
+      color: #79c0ff;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    .services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
     }
-    ul li::before {
-      content: "\25B8 ";
-      color: #58a6ff;
+    .service {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #30363d;
     }
-    .footer {
+    .service:hover {
+      border-color: #58a6ff;
+    }
+    footer {
       text-align: center;
-      padding: 10px;
-      font-size: 0.9em;
-      border-top: 1px solid #30363d;
-      background-color: #161b22;
-      color: #8b949e;
+      padding: 20px;
+      background: #161b22;
+      border-top: 2px solid #30363d;
     }
-    a {
-      color: #58a6ff;
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #238636;
+      color: white;
       text-decoration: none;
+      border-radius: 5px;
     }
-    a:hover {
-      text-decoration: underline;
+    @media (max-width: 768px) {
+      .services {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>CyberTrace Lab</h1>
-    <p>OSINT & Penetration Testing Services</p>
+    <p>Professional OSINT & Penetration Testing Services</p>
   </header>
 
   <section>
-    <h2>About Us</h2>
-    <p>CyberTrace Lab is your digital intelligence partner offering professional OSINT investigations and penetration testing using ethical and advanced techniques.</p>
-  </section>
-
-  <section>
     <h2>Our Services</h2>
-    <ul>
-      <li>OSINT Social Media Profile Analysis</li>
-      <li>Background Checks via Open Source</li>
-      <li>Digital Footprint Tracking</li>
-      <li>Cybersecurity Risk Analysis</li>
-      <li>Individual Identity Investigations</li>
-      <li>Business Intelligence Research</li>
-      <li>Credential Leak Detection</li>
-      <li>Online Threat Investigation</li>
-      <li>Reconnaissance for Bug Bounty</li>
-      <li>Competitive Intelligence Reporting</li>
-    </ul>
+    <div class="services">
+      <div class="service">
+        <h3>OSINT Social Media Profiling</h3>
+        <p>Analyze social profiles for hidden and public data that reveal behavior, connections, and risks.</p>
+      </div>
+      <div class="service">
+        <h3>Background Checks</h3>
+        <p>Collect public data for pre-employment, client vetting, or partner validation using ethical methods.</p>
+      </div>
+      <div class="service">
+        <h3>Digital Footprint Analysis</h3>
+        <p>Track online activity trails, leaks, and exposed credentials with free & powerful OSINT tools.</p>
+      </div>
+      <div class="service">
+        <h3>Cybersecurity Risk Detection</h3>
+        <p>Discover potential vulnerabilities using OSINT and suggest detailed risk mitigation steps.</p>
+      </div>
+      <div class="service">
+        <h3>Website Vulnerability Scan</h3>
+        <p>Scan websites using open-source tools to detect XSS, SQLi, CSRF, and more.</p>
+      </div>
+      <div class="service">
+        <h3>Authentication Bypass Testing</h3>
+        <p>Simulate real-world attacks to find flaws in login systems and multi-factor authentication.</p>
+      </div>
+      <div class="service">
+        <h3>API Security Testing</h3>
+        <p>Perform fuzzing and input validation checks to identify insecure endpoints and exposed data.</p>
+      </div>
+      <div class="service">
+        <h3>Firewall & WAF Bypass Test</h3>
+        <p>Test how secure your web application is by trying bypass techniques ethically.</p>
+      </div>
+      <div class="service">
+        <h3>OSINT Business Intelligence</h3>
+        <p>Research competitors, market signals, and domain data using open sources.</p>
+      </div>
+      <div class="service">
+        <h3>Custom Pentesting Reports</h3>
+        <p>Receive detailed vulnerability analysis and patch guidance in professional report format.</p>
+      </div>
+    </div>
+    <a class="button" href="https://www.fiverr.com/s/WEz5A3R" target="_blank">Hire Us on Fiverr</a>
   </section>
 
-  <section>
-    <h2>Find Me on Fiverr</h2>
-    <ul>
-      <li><a href="https://www.fiverr.com/s/WEz5A3R" target="_blank">Gig 1</a></li>
-      <li><a href="https://www.fiverr.com/s/ZmxVmoY" target="_blank">Gig 2</a></li>
-      <li><a href="https://www.fiverr.com/s/qD6K8m2" target="_blank">Gig 3</a></li>
-      <li><a href="https://www.fiverr.com/s/vvG0vQL" target="_blank">Gig 4</a></li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:cybertracelab2025@gmail.com">cybertracelab2025@gmail.com</a></p>
-  </section>
-
-  <div class="footer">
-    &copy; 2025 CyberTrace Lab. All rights reserved.
-  </div>
+  <footer>
+    <p>Contact: cybertracelab2025@gmail.com</p>
+    <p>&copy; 2025 CyberTrace Lab. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
